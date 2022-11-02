@@ -1,0 +1,26 @@
+.navbar{
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    
+}
+
+.navbar ul{
+    overflow: auto;
+    text-align: center;
+}
+
+.navbar li{
+    margin: 13px 20px;
+    display: inline-block;
+    list-style: none;
+}
+
+.navbar li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li a:hover{
+    background-color: blue;
+}

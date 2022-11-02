@@ -1,0 +1,70 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: beige;
+}
+.wrapper {
+	width: 589px;
+	height: auto;
+	margin: 10% auto;
+}
+.img-area {
+	display: grid;
+	grid-template-rows: repeat(3, 19vh);
+	grid-template-columns: repeat(2, 19vw);
+	transition: all .2s cubic-bezier(0.5, 0.8, 0.5, 0.2);
+	border-radius: 10px;
+}
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	left: 0;
+	top: 0;
+	transition: all .15s cubic-bezier(0.5, 0.2, 0.2, 0.5);
+	position: relative;
+	box-shadow: 0 0 0 #000;
+	opacity: .7;
+}
+img:hover {
+	width: 120%;
+	height: 300%;
+	opacity: 1;
+	z-index: 1;
+	box-shadow: 1em 1em 1em #0004;
+	transition: all .3s cubic-bezier(0.5, 0.2, 0.2, 0.5);
+	border-radius: 5px;
+	top: -100%;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.wrapper {
+		width: 80%;
+		height: auto;
+		margin: 5%;
+	}
+	.img-area {
+		grid-template-rows: repeat(3, 20vh);
+		grid-template-columns: repeat(2, 32vh);
+	}
+	img:hover {
+		width: 100%;
+		height: 200%;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.wrapper {
+		width: 80%;
+		height: auto;
+		margin: 10%;
+	}
+	.img-area {
+		grid-template-rows: repeat(5, 30vh);
+		grid-template-columns: repeat(1, 50vh);
+	}
+	img:hover {
+		width: 100%;
+		height: 200%;
+	}
+}

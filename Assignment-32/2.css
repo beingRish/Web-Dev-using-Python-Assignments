@@ -1,0 +1,37 @@
+/*2. Refering the above question, apply proper background CSS properties to the page.
+(Avoid Scroll, we need only landing page)*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("./Desktop-travel-essential-items-HD-picture.webp");
+    background-size: cover;
+}
+
+h2{
+    /* Positioning */
+    margin: 0 auto;
+    width: 500px;
+
+    /* Font Styling */
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 2px;
+
+    padding-top: 250px;
+}
+
+.subtitle{
+    /* Positioning */
+    margin: 0 auto;
+    width: 400px;
+
+    /* Font Styling */
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+}

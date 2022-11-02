@@ -1,0 +1,9 @@
+.my-card {
+    display: flex;
+    background-size: cover;
+  } 
+  
+.my-card:nth-child(even) {
+   flex-direction: row-reverse;
+ }
+
