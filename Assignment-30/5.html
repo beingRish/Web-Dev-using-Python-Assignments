@@ -1,0 +1,28 @@
+<!-- 5. Embed Python swap program in html document
+Note: You can either use C or Python Program . -->
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Embed Python</title>
+        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css"/>
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    </head>
+
+    <body>
+        <py-script>
+            
+            number_1 = int(input("Enter value:"))
+            number_2 = int(input("Enter value:"))
+
+            number_1, number_2 = number_2, number_1
+
+            pyscript.write("New value of a number_1 = ", number_1)
+            pyscript.write("New value of a number_2 = ", number_2)
+
+        </py-script>
+    </body>
+
+</html>

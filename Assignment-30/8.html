@@ -1,0 +1,129 @@
+<!-- 8. Create a registration form for a hackathon, (Include form validation).
+Note: You should not include any CSS or Javascript -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hackathon Form</title>
+    </head>
+    <body>
+        <div><h1>Form for Hackathon Applications</h1></div>
+        <form>
+            <div><h4>It's not a bug, it's a future</h4></div>
+            <div>
+                <label>First Name*</label>
+                <input type="text" placeholder="Enter Your first name">
+            </div><br>
+
+            <div>
+                <label>Last Name*</label>
+                <input type="text" placeholder="Enter Your last name">
+            </div><br>
+
+            <div>
+                <label>Email Address*</label>
+                <input type="email" placeholder="Enter Your Email">
+            </div><br>
+
+            <div>
+               <label>Nationality*</label>
+               <select>
+                <option selected>Indian</option>
+                <option>China</option>
+                <option>Nepal</option>
+                <option>Other</option>
+               </select>
+            </div><br>
+
+            <div>
+                <label>Do You need a visa to come to? *</label>
+                <input type="radio" id="y" name="visa" value="y" checked>
+                <label for="y">Yes</label>
+                <input type="radio" id="n" name="visa" value="n">
+                <label for="n">No</label>
+            </div><br>
+
+            <div>
+                <label>What is your idea...?</label>
+                <textarea>Type here...</textarea>
+            </div><br>
+
+            <div>
+                <label>Why do you want to take part in the hack?</label>
+                <textarea>Type here...</textarea>
+            </div><br>
+
+            <label>What describes you best?</label>
+            <div>
+                <input type="checkbox">Risk-Takers<br>
+                <input type="checkbox">Reflective<br>
+                <input type="checkbox">Empathetic<br>
+                <input type="checkbox">Observant<br>
+                <input type="checkbox">Creator<br>
+                <input type="checkbox">Resilient<br>
+                <input type="checkbox">Networker<br>
+                <input type="checkbox">Problem finder<br>
+            </div><br>  
+
+            <div>
+                <label>Your academic background-
+                    <br>Are you currently pursuing or 
+                     <br>did you pursue an academic or professional degree ?
+                </label>
+                <input type="radio" id="y" name="degree" value="y">
+                <label for="y">Yes, I am currently pursuing.</label>
+                <input type="radio" id="n" name="degree" value="n">
+                <label for="n">No, I am not</label>
+            </div><br>
+
+            <div>
+                <label>Do you have a<br> linkedin profile or a<br>
+                    website about<br> yourself?</label>
+                <input type="text">
+            </div><br>
+
+            <div>
+                <label>Are you part<br> of a team?</label>
+                <input type="radio" id="y" name="team" value="y">
+                <label for="y">Yes</label>
+                <input type="radio" id="n" name="team" value="n">
+                <label for="n">No</label>
+            </div><br>
+
+            <div>
+                <label>As you know, some<br>
+                       participants can<br> 
+                       apply individually.<br>
+                       Would you be<br> 
+                       interest to have<br>
+                       someone else<br>
+                       joining your team ?</label>
+                <input type="radio" id="s" name="team" value="s">
+                <label for="s">Sure!</label>
+                <input type="radio" id="w" name="team" value="w">
+                <label for="w">Why not!</label>
+                <input type="radio" id="n" name="team" value="n">
+                <label for="n">Not really</label>
+            </div><br>
+
+            <div>
+                <label>Have you done a <br> hackathon before?</label>
+                <input type="radio" id="y" name="team" value="y">
+                <label for="y">Yes</label>
+                <input type="radio" id="n" name="team" value="n">
+                <label for="n">No</label>
+            </div><br>
+
+            <div>
+                <label>What hackathon(s)<br>
+                     did you attend and
+                     <br> which year(s) ? </label>
+                <input type="text">
+            </div><br>
+
+            <button class="btn btn-primary" type="submit">Submit form</button>
+            
+             
+        </form>
+    </body>
+</html>
