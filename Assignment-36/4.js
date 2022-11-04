@@ -14,17 +14,10 @@ let countries = [
     "Tajikistan", "Thailand", "Turkey"
 ]
 
-let arr = [];
-for(let i = 0; i < countries.length; i++){
-    if(countries[i].includes('land'))
-    arr.push(countries[i])
-}
-
-if(arr.length > 0 ){
-    console.log(arr);
+let arg1 = countries.filter((arg)=> arg.includes("and"));
+if(arg1.length==0){
+    console.log("All these countries are withou and.");
 }
 else{
-    console.log('All these are countries without land')
+    console.log(arg1);
 }
-  
-
