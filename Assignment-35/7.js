@@ -1,8 +1,8 @@
 // 7. Write a script which generates a random hexadecimal number.
 
-let items = ["a", "b", "c", "d", "e", "f"];
-let item = items[Math.floor(Math.random()*items.length)];
-let random = Math.random().toString().slice(2, 6);
-console.log (`
-    ${item}${random}${item}
-`);
+const randomHexaDecimal = () => {
+    let n = (Math.random() * 0xfffff * 1000000).toString(16);
+    return '#' + n.slice(0, 6);
+  };
+  
+console.log(randomHexaDecimal())
